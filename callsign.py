@@ -8,7 +8,7 @@ toemail = 'to@email.net'
 
 import urllib, zipfile, os, datetime, smtplib
 
-now = datetime.datetime.now()
+now = datetime.datetime.now() - datetime.timedelta(days=1)
 now = now.strftime("%a")
 now = now.lower()
 
